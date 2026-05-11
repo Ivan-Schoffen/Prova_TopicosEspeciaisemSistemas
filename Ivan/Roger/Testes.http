@@ -1,0 +1,7 @@
+### Cadastrar Livro
+POST http://localhost:5092/api/livro/cadastrar
+Content-Type: application/json
+
+{
+    
+}
