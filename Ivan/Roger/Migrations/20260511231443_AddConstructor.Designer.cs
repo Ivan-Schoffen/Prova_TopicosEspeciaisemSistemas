@@ -11,8 +11,8 @@ using Roger.Data;
 namespace Roger.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260511224357_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20260511231443_AddConstructor")]
+    partial class AddConstructor
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,7 +39,7 @@ namespace Roger.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("livro");
+                    b.ToTable("livros");
                 });
 #pragma warning restore 612, 618
         }

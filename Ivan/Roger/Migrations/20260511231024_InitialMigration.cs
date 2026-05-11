@@ -12,7 +12,7 @@ namespace Roger.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "livro",
+                name: "livros",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "TEXT", nullable: false),
@@ -23,7 +23,7 @@ namespace Roger.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_livro", x => x.Id);
+                    table.PrimaryKey("PK_livros", x => x.Id);
                 });
         }
 
@@ -31,7 +31,7 @@ namespace Roger.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "livro");
+                name: "livros");
         }
     }
 }

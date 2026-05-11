@@ -6,7 +6,7 @@ namespace Roger.Data;
 
 public class AppDbContext : DbContext
 {
-    public DbSet<Livro> livro { get; set; }
+    public DbSet<Livro> livros { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

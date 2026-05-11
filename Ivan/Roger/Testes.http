@@ -2,6 +2,26 @@
 POST http://localhost:5092/api/livro/cadastrar
 Content-Type: application/json
 
-{
-    
-}
+  {
+    "nome": "Domain-Driven Design",
+    "autor": "Eric Evans",
+    "criadoEm": "2026-10-20T19:10:00"
+  }
+
+### Listar Livros
+GET http://localhost:5092/api/livro/listar
+
+### Buscar Livro
+GET http://localhost:5092/api/livro/buscar/Pequeno principe
+
+### Emprestar livro
+POST http://localhost:5092/api/livro/emprestar/c757537a-963f-4ddd-9c77-bbc43e6481b8
+
+### Devolver livro
+POST http://localhost:5092/api/livro/devolver/897c246a-859f-4c03-af15-1e0912ba5a6b
+
+### Listar livros disponiveis
+GET http://localhost:5092/api/livro/disponiveis 
+
+### Listar livros emprestados
+GET http://localhost:5092/api/livro/emprestados
